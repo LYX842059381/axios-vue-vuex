@@ -1,0 +1,17 @@
+// 上border
+@mixin setTopLine($color: #d4d7dc) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px; /*no*/
+  border-bottom: 1px solid $color;
+  color: $color;
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(.5);
+  -ms-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
